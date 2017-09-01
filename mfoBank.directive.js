@@ -1,5 +1,13 @@
 (function (undefined) {
 
+    //MFO directive perform mfo input field validation through http request(P2RService)
+    //information about bank, insert in to bank-data variable
+    //also it format input string like "123 213"
+
+    //use example
+    //<input class="mfo-input" mfo-bank bank-data="bankDataModel"></input>
+    //<span class="bank-name" ng-bind="bankDataModel.BankName"><span>
+
     angular
     .module('app')
     .directive('mfoBank', mfoBankDirective);
